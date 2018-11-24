@@ -2,7 +2,7 @@ class CreateCategories < ActiveRecord::Migration[5.2]
   def change
     create_table :categories do |t|
 
-      t.text :type
+      t.text :medium
       t.belongs_to :artist
       t.belongs_to :artwork
 

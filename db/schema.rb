@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2018_11_21_153930) do
   end
 
   create_table "categories", force: :cascade do |t|
-    t.text "type"
+    t.text "medium"
     t.bigint "artist_id"
     t.bigint "artwork_id"
     t.datetime "created_at", null: false
