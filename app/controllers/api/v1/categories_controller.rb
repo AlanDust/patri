@@ -22,7 +22,7 @@ class Api::V1::CategoriesController < ApplicationController
     private
 
     def category_params
-      params.require(:category).permit(:type, :artist_id, :artwork_id)
+      params.require(:category).permit(:medium, :artist_id, :artwork_id)
     end
   end
 end
