@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ArtworkTile = props => {
+const PaintingTile = props => {
 
   return(
     <div>
@@ -8,4 +8,4 @@ const ArtworkTile = props => {
   )
 }
 
-export default ArtworkTile;
+export default PaintingTile;

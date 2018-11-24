@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_21_153930) do
+ActiveRecord::Schema.define(version: 2018_11_24_220007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,22 +23,34 @@ ActiveRecord::Schema.define(version: 2018_11_21_153930) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "artworks", force: :cascade do |t|
+  create_table "bottles", force: :cascade do |t|
     t.string "picture", null: false
     t.string "title"
     t.string "description"
+    t.bigint "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_bottles_on_artist_id"
   end
 
-  create_table "categories", force: :cascade do |t|
-    t.text "medium"
+  create_table "drawings", force: :cascade do |t|
+    t.string "picture", null: false
+    t.string "title"
+    t.string "description"
     t.bigint "artist_id"
-    t.bigint "artwork_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["artist_id"], name: "index_categories_on_artist_id"
-    t.index ["artwork_id"], name: "index_categories_on_artwork_id"
+    t.index ["artist_id"], name: "index_drawings_on_artist_id"
+  end
+
+  create_table "paintings", force: :cascade do |t|
+    t.string "picture", null: false
+    t.string "title"
+    t.string "description"
+    t.bigint "artist_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_paintings_on_artist_id"
   end
 
   create_table "users", force: :cascade do |t|
