@@ -2,17 +2,7 @@ class Api::V1::ArtistsController < ApplicationController
   protect_from_forgery unless: -> { request.format.json? }
 
   def index
-    render json: { artists: Artist.all, current_user: current_user }
-  end
-
-  def create
-    newArtist = Artist.new(artist_params)
-
-    if newArtist.save
-      render json: newArtist
-    else
-      render json: { errors: newArtist.errors.full_messages }, status: :unprocessable_entity
-    end
+    render json: Artist.all
   end
 
   def show
@@ -22,6 +12,6 @@ class Api::V1::ArtistsController < ApplicationController
   private
 
   def artist_params
-    params.require(:artist).permit(:name, :picture, :biography)
+    params.require(:artist).permit(:name, :picture, :biography, :id)
   end
 end

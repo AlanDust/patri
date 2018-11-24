@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
-      resources :artists, only: [:index, :create, :show] do
-        resources :categories, only: [:index, :create, :show]
-        resources :artworks, only: [:index, :create, :show]
+      resources :artists, only: [:index, :show] do
+        resources :paintings, only: [:index, :create, :show]
+        resources :drawings, only: [:index, :create, :show]
+        resources :bottles, only: [:index, :create, :show]
       end
     end
     get '/artists', to: 'homes#index'

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CategoryTile = props => {
+const BottleTile = props => {
 
   return(
     <div>
@@ -8,4 +8,4 @@ const CategoryTile = props => {
   )
 }
 
-export default CategoryTile;
+export default BottleTile;
