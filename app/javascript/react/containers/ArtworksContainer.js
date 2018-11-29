@@ -23,6 +23,7 @@ class ArtworksContainer extends Component {
     })
     .then(response => response.json())
     .then(response => {
+      debugger
       this.setState({
         artistList: response
       })
