@@ -23,7 +23,6 @@ class BottlesContainer extends Component {
     })
     .then(response => response.json())
     .then(response => {
-      debugger
       this.setState({
         bottleList: response.artwork
       })

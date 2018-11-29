@@ -1,34 +1,51 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { Component } from 'react';
+import HomepageArtistComponent from '../components/HomepageArtistComponent'
 
-const ArtworksContainer = props => {
+class ArtworksContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      artistList: [],
+      error: "",
+    }
+  }
 
-  return(
-    <div>
-      <div className="large-4 medium-4 small-12 column">
-        <h1>Paintings</h1>
-        <Link to={"/artists/1/paintings"}>
-          <img className="painting-category" src="https://s3.amazonaws.com/patri-website/monet.jpg" />
-        </Link>
+  componentDidMount() {
+    fetch(`/api/v1/artists`)
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(response => {
+      this.setState({
+        artistList: response
+      })
+    })
+    .catch(error => console.error('Error:', error));
+  }
+  render() {
+    let artistTiles = this.state.artistList.map(artist => {
+      return(
+        <HomepageArtistComponent
+          key={artist.id}
+          id={artist.id}
+        />
+      )
+    })
+    return(
+      <div>
+        <div className="large-12 medium-12 small-12 column">
+          {artistTiles}
+        </div>
       </div>
-      <div className="large-4 medium-4 small-12 column">
-        <h1>Drawings</h1>
-        <Link to={"/artists/1/drawings"}>
-          <img className="painting-category" src="https://s3.amazonaws.com/patri-website/cat.jpg" />
-        </Link>
-        <h1>The Artist</h1>
-        <Link to={"/artists/1"}>
-          <img className="artist-category" src="https://s3.amazonaws.com/patri-website/Patri.jpg" />
-        </Link>
-      </div>
-      <div className="large-4 medium-4 small-12 column">
-        <h1>Painted Bottles</h1>
-        <Link to={"/artists/1/bottles"}>
-          <img className="painting-category" src="https://s3.amazonaws.com/patri-website/birds.jpg" />
-        </Link>
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default ArtworksContainer;
