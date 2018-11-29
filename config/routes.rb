@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   end
   get '/artists', to: 'homes#index'
   get '/artists/:id', to: 'homes#index'
-  get '/artists/:artist_id/bottles', to: 'bottles#show'
-  get '/artists/:artist_id/drawings', to: 'drawings#show'
-  get '/artists/:artist_id/paintings', to: 'paintings#show'
+  get '/artists/:artist_id/bottles', to: 'homes#index'
+  get '/artists/:artist_id/drawings', to: 'homes#index'
+  get '/artists/:artist_id/paintings', to: 'homes#index'
 
 end
