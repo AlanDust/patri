@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Patri is a simple web application that I am developing as a present for my girlfriend, Patri.  
 
-Things you may want to cover:
+The application is set up so that an artist can sign up and possibly eventually add their own artwork.  However, I decided that I would stick with the artwork of Patri.  This was mainly an exercise in reinforcing my React, MVC, PostgreSQL, CSS, and Ruby on Rails knowledge, while making a nice product for someone I care about.  
 
-* Ruby version
+A link to this website, along with usage instructions will be available when the application is deployed to Heroku.  
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Technologies Utilized: 
+Ruby 2.4.5 
+Rails React 
+Javascript  
+AWS
+Devise 
+Carrierwave 
+Foundation 
+PostgreSQL 
+CSS
