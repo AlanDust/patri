@@ -7,7 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Artist.create([
-  { name: "Patricia De Andres Flores", picture: "https://s3.amazonaws.com/patri-website/Patri.jpg", biography: "Biography goes here"}
+  { name: "Patricia De Andres Flores", picture: "https://s3.amazonaws.com/patri-website/Patri.jpg", biography: "Art and cultural history verify our need self expression, especially artistic expressions. This element in our story is one way to understand the link between human nature and Nature.
+
+The delicate dance between them, Nature and Humanity has fascinated artist since man began scrawling on cave walls, where even the act of creating artwork  defaced the raw beauty of the stone. As society grows, this interaction is unavoidable, imperative, beautiful and tragic.
+
+From the beginning of human history, nature has played a vital role in our creative expressions. The shapes in the lands, the curves in animal´s movements, the colors of the rainbow, the bright of the water we rely on for daily survival condition how we view, interpret and feel the world around us. And in turn, the Art we create from nature´s inspiration becomes part of our personal and cultural and vital identity."}
 ])
 
 monet = Painting.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/monet.jpg", title: "Copy of 'Monet's garden at Vétheuil (1880)'", description: "A copy of Monet's 'Garden at Vétheuil (1880)'"})

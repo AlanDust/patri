@@ -1,5 +1,8 @@
 .homepage-headers {
   text-align: center;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 .homepage-image{
@@ -18,4 +21,15 @@ img{
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+}
+
+.home-page-quote {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Noto Serif TC', serif;
+  margin-top: 1rem;
+}
+
+.the-artist {
+  margin-top: 1rem;
 }

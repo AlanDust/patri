@@ -9,9 +9,26 @@ class ArtistsContainer extends Component {
       error: "",
     }
   }
-
+  componentDidMount() {
+    fetch(`/api/v1/artists`)
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(response => {
+      this.setState({
+        artistList: response
+      })
+    })
+    .catch(error => console.error('Error:', error));
+  }
   render() {
-
     let artistTiles = this.state.artistList.map(artist => {
       return(
         <ArtistTile

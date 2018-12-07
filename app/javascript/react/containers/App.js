@@ -13,8 +13,8 @@ const App = (props) => {
   return (
     <Router history={browserHistory}>
       <Route path='/' component={ArtworksContainer} />
-      <Route path='/artists/:id' >
-        <IndexRoute component={HomepageArtistComponent} />
+      <Route path='/artists/:id'>
+        <IndexRoute component={ArtistsContainer} />
         <Route path='/artists/:artist_id/paintings' component={PaintingsContainer} />
         <Route path='/artists/:artist_id/drawings' component={DrawingsContainer} />
         <Route path='/artists/:artist_id/bottles' component={BottlesContainer} />
