@@ -1,4 +1,4 @@
-class Drawing < ApplicationRecord
+class Project < ApplicationRecord
   belongs_to :artist
 
   validates :picture, presence: true

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BottleTile = props => {
+const ProjectTile = props => {
 
   return(
     <div>
@@ -17,4 +17,4 @@ const BottleTile = props => {
   )
 }
 
-export default BottleTile;
+export default ProjectTile;

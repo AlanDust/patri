@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import BottleTile from '../components/BottleTile'
+import ProjectTile from '../components/ProjectTile'
 
-class BottlesContainer extends Component {
+class ProjectsContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      bottleList: [],
+      projectList: [],
       error: "",
     }
   }
 
   componentDidMount() {
-    fetch(`/api/v1/artists/1/bottles`)
+    fetch(`/api/v1/artists/1/projects`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -24,7 +24,7 @@ class BottlesContainer extends Component {
     .then(response => response.json())
     .then(response => {
       this.setState({
-        bottleList: response.artwork
+        projectList: response.artwork
       })
     })
     .catch(error => console.error('Error:', error));
@@ -32,14 +32,14 @@ class BottlesContainer extends Component {
 
   render() {
 
-    let bottleTiles = this.state.bottleList.map(bottle => {
+    let projectTiles = this.state.projectList.map(project => {
       return(
-        <BottleTile
-          key={bottle.id}
-          id={bottle.id}
-          title={bottle.title}
-          picture={bottle.picture}
-          description={bottle.description}
+        <ProjectTile
+          key={project.id}
+          id={project.id}
+          title={project.title}
+          picture={project.picture}
+          description={project.description}
         />
       )
     })
@@ -51,11 +51,12 @@ class BottlesContainer extends Component {
           <p> ~Jeff Koons</p>
         </div>
         <div className="large-12 medium-12 small-12 column">
-          {bottleTiles}
+          {projectTiles}
         </div>
       </div>
     )
   }
 }
 
-export default BottlesContainer;
+
+export default ProjectsContainer;

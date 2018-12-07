@@ -1,6 +1,6 @@
-class CreateBottles < ActiveRecord::Migration[5.2]
+class CreateProjects < ActiveRecord::Migration[5.2]
   def change
-    create_table :bottles do |t|
+    create_table :projects do |t|
 
       t.string :picture, null: false
       t.string :title

@@ -6,8 +6,8 @@ const HomepageArtistComponent = props => {
   return(
     <div>
       <div className="large-4 medium-4 small-12 column">
-        <h1 className="homepage-headers">Paintings</h1>
-        <Link to={`/artists/${props.id}/paintings`}>
+        <h1 className="homepage-headers">Projects</h1>
+        <Link to={`/artists/${props.id}/projects`}>
           <img className="homepage-image" className="category" src="https://s3.amazonaws.com/patri-website/monet.jpg" />
         </Link>
         <div className="home-page-quote">
@@ -16,8 +16,8 @@ const HomepageArtistComponent = props => {
         </div>
       </div>
       <div className="large-4 medium-4 small-12 column">
-        <h1 className="homepage-headers">Drawings</h1>
-        <Link to={`/artists/${props.id}/drawings`}>
+        <h1 className="homepage-headers">Animals</h1>
+        <Link to={`/artists/${props.id}/animals`}>
           <img className="homepage-image" className="category" src="https://s3.amazonaws.com/patri-website/cat.jpg" />
         </Link>
         <h1 className="homepage-headers the-artist">The Artist</h1>
@@ -26,9 +26,9 @@ const HomepageArtistComponent = props => {
         </Link>
       </div>
       <div className="large-4 medium-4 small-12 column">
-        <h1 className="homepage-headers">Painted Bottles</h1>
-        <Link to={`/artists/${props.id}/bottles`}>
-          <img className="homepage-image" className="category" src="https://s3.amazonaws.com/patri-website/birds.jpg" />
+        <h1 className="homepage-headers">Portraits</h1>
+        <Link to={`/artists/${props.id}/portraits`}>
+          <img className="homepage-image" className="category" src="https://s3.amazonaws.com/patri-website/patri_and_lorena.jpg" />
         </Link>
       </div>
     </div>

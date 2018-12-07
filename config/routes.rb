@@ -6,16 +6,16 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :artists, only: [:index, :create, :show] do
-        resources :paintings, only: [:index, :create, :show]
-        resources :drawings, only: [:index, :create, :show]
-        resources :bottles, only: [:index, :create, :show]
+        resources :projects, only: [:index, :create, :show]
+        resources :animals, only: [:index, :create, :show]
+        resources :portraits, only: [:index, :create, :show]
       end
     end
   end
   get '/artists', to: 'homes#index'
   get '/artists/:id', to: 'homes#index'
-  get '/artists/:artist_id/bottles', to: 'homes#index'
-  get '/artists/:artist_id/drawings', to: 'homes#index'
-  get '/artists/:artist_id/paintings', to: 'homes#index'
+  get '/artists/:artist_id/portaits', to: 'homes#index'
+  get '/artists/:artist_id/animals', to: 'homes#index'
+  get '/artists/:artist_id/projects', to: 'homes#index'
 
 end

@@ -1,4 +1,4 @@
-class Bottle < ApplicationRecord
+class Portrait < ApplicationRecord
   belongs_to :artist
 
   validates :picture, presence: true
