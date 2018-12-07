@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DrawingTile = props => {
+const AnimalTile = props => {
 
   return(
     <div>
@@ -17,4 +17,4 @@ const DrawingTile = props => {
   )
 }
 
-export default DrawingTile;
+export default AnimalTile;

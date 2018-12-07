@@ -3,9 +3,9 @@ import 'babel-polyfill';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import ArtistsContainer from './ArtistsContainer';
 import ArtworksContainer from './ArtworksContainer';
-import PaintingsContainer from './PaintingsContainer';
-import DrawingsContainer from './DrawingsContainer';
-import BottlesContainer from './BottlesContainer';
+import ProjectsContainer from './ProjectsContainer';
+import AnimalsContainer from './AnimalsContainer';
+import PortraitsContainer from './PortraitsContainer';
 import HomepageArtistComponent from '../components/HomepageArtistComponent'
 
 
@@ -15,9 +15,9 @@ const App = (props) => {
       <Route path='/' component={ArtworksContainer} />
       <Route path='/artists/:id'>
         <IndexRoute component={ArtistsContainer} />
-        <Route path='/artists/:artist_id/paintings' component={PaintingsContainer} />
-        <Route path='/artists/:artist_id/drawings' component={DrawingsContainer} />
-        <Route path='/artists/:artist_id/bottles' component={BottlesContainer} />
+        <Route path='/artists/:artist_id/projects' component={ProjectsContainer} />
+        <Route path='/artists/:artist_id/animals' component={AnimalsContainer} />
+        <Route path='/artists/:artist_id/portraits' component={PortraitsContainer} />
       </Route>
     </Router>
   )

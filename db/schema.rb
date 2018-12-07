@@ -15,6 +15,16 @@ ActiveRecord::Schema.define(version: 2018_11_24_220007) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "animals", force: :cascade do |t|
+    t.string "picture", null: false
+    t.string "title"
+    t.string "description"
+    t.bigint "artist_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_animals_on_artist_id"
+  end
+
   create_table "artists", force: :cascade do |t|
     t.string "name", null: false
     t.string "picture"
@@ -23,34 +33,24 @@ ActiveRecord::Schema.define(version: 2018_11_24_220007) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "bottles", force: :cascade do |t|
+  create_table "portraits", force: :cascade do |t|
     t.string "picture", null: false
     t.string "title"
     t.string "description"
     t.bigint "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["artist_id"], name: "index_bottles_on_artist_id"
+    t.index ["artist_id"], name: "index_portraits_on_artist_id"
   end
 
-  create_table "drawings", force: :cascade do |t|
+  create_table "projects", force: :cascade do |t|
     t.string "picture", null: false
     t.string "title"
     t.string "description"
     t.bigint "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["artist_id"], name: "index_drawings_on_artist_id"
-  end
-
-  create_table "paintings", force: :cascade do |t|
-    t.string "picture", null: false
-    t.string "title"
-    t.string "description"
-    t.bigint "artist_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["artist_id"], name: "index_paintings_on_artist_id"
+    t.index ["artist_id"], name: "index_projects_on_artist_id"
   end
 
   create_table "users", force: :cascade do |t|

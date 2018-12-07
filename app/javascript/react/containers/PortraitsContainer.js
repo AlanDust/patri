@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import DrawingTile from '../components/DrawingTile'
+import PortraitTile from '../components/PortraitTile'
 
-class DrawingsContainer extends Component {
+class PortraitsContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      drawingList: [],
+      portraitList: [],
       error: "",
     }
   }
 
   componentDidMount() {
-    fetch(`/api/v1/artists/1/drawings`)
+    fetch(`/api/v1/artists/1/portraits`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -24,21 +24,22 @@ class DrawingsContainer extends Component {
     .then(response => response.json())
     .then(response => {
       this.setState({
-        drawingList: response.categories
+        portraitList: response.artwork
       })
     })
     .catch(error => console.error('Error:', error));
   }
 
   render() {
-    let drawingTiles = this.state.drawingList.map(drawing => {
+
+    let portraitTiles = this.state.portraitList.map(portrait => {
       return(
-        <DrawingTile
-          key={drawing.id}
-          id={drawing.id}
-          title={drawing.title}
-          picture={drawing.picture}
-          description={drawing.description}
+        <PortraitTile
+          key={portrait.id}
+          id={portrait.id}
+          title={portrait.title}
+          picture={portrait.picture}
+          description={portrait.description}
         />
       )
     })
@@ -50,11 +51,11 @@ class DrawingsContainer extends Component {
           <p> Oscar Wilde, The Picture of Dorian Gray</p>
         </div>
         <div className="large-12 medium-12 small-12 column">
-          {drawingTiles}
+          {portraitTiles}
         </div>
       </div>
     )
   }
 }
 
-export default DrawingsContainer;
+export default PortraitsContainer;

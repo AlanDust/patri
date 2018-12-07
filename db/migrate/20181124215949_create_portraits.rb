@@ -1,7 +1,6 @@
-class CreateDrawings < ActiveRecord::Migration[5.2]
+class CreatePortraits < ActiveRecord::Migration[5.2]
   def change
-    create_table :drawings do |t|
-
+    create_table :portraits do |t|
       t.string :picture, null: false
       t.string :title
       t.string :description
