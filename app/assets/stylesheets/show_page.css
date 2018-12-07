@@ -1,4 +1,54 @@
 .showpage-image-titles{
-  align: center;
+  align: justify;
   margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.show-page-image {
+  margin: 2rem;
+}
+
+.showpage-text {
+  margin: 2rem;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.description-text {
+  font-size: 1rem;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.show-page-quote {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.artist-name {
+  text-align: center;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.artist-title {
+  text-align: center;
+  font-family: 'Noto Serif TC', serif;
+  margin-bottom: 4rem;
+}
+
+.artist-image {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Noto Serif TC', serif;
+  margin-top: 2rem;
+}
+
+.artist-quote {
+  text-align: center;
+}
+
+.artist-bio {
+  margin-top: 3rem;
 }

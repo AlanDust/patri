@@ -46,6 +46,10 @@ class BottlesContainer extends Component {
 
     return(
       <div>
+        <div className="show-page-quote">
+          <p> "I spend much more time looking at Art History and at different references to Art than I do at actual objects."</p>
+          <p> ~Jeff Koons</p>
+        </div>
         <div className="large-12 medium-12 small-12 column">
           {bottleTiles}
         </div>

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :artists, only: [:index, :show] do
+      resources :artists, only: [:index, :create, :show] do
         resources :paintings, only: [:index, :create, :show]
         resources :drawings, only: [:index, :create, :show]
         resources :bottles, only: [:index, :create, :show]
