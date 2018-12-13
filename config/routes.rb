@@ -12,6 +12,8 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  get '/', to: 'homes#index'
   get '/artists', to: 'homes#index'
   get '/artists/:id', to: 'homes#index'
   get '/artists/:artist_id/portaits', to: 'homes#index'
