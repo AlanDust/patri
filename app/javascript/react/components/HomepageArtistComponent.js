@@ -30,6 +30,9 @@ const HomepageArtistComponent = props => {
         <Link to={`/artists/${props.id}/portraits`}>
           <img className="homepage-image" className="category" src="https://s3.amazonaws.com/patri-website/patri_and_lorena.jpg" />
         </Link>
+        <Link to={`/artists/${props.id}/music_inspirations`}>
+          <h1 className="homepage-headers">Inspiration</h1>
+        </Link>
       </div>
     </div>
   )
