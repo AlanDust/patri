@@ -1,6 +1,6 @@
-class CreateInspirations < ActiveRecord::Migration[5.2]
+class CreateMusicInspirations < ActiveRecord::Migration[5.2]
   def change
-    create_table :inspirations do |t|
+    create_table :music_inspirations do |t|
       t.string :picture, null: false
 
       t.belongs_to :artist

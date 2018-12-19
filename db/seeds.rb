@@ -27,3 +27,27 @@ black_cat = Animal.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/pa
 mermaid = Animal.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/mermaid.jpg", title: "mermaid bottle title here", description: "Description of mermaid bottle here"})
 siamese_cat = Animal.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/siamese_cat.jpg", title: "Siamese cat bottle title here", description: "Siamese Cat bottle description here"})
 white_cat = Animal.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/white_cat.jpg", title: "White cat bottle title here", description: "White cat bottle description here"})
+
+music_one = MusicInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/music+1.png"})
+music_two = MusicInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/music+2.png"})
+music_three = MusicInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/music+3.png"})
+music_four = MusicInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/music+4.png"})
+music_five = MusicInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/music+5.png"})
+music_six = MusicInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/music+6.png"})
+
+cat_one = CatInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/cats+1.png"})
+cat_two = CatInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/cats+2.png"})
+cat_three = CatInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/cats+3.png"})
+cat_four = CatInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/cats+4.png"})
+
+nature_one = NatureInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Nature+1.png"})
+nature_two = NatureInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Nature+2.png"})
+nature_three = NatureInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Nature+3.png"})
+nature_four = NatureInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Nature+4.png"})
+
+art_history_one = ArtHistoryInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Art+History+1.png"})
+art_history_two = ArtHistoryInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Art+History+2.png"})
+art_history_three = ArtHistoryInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Art+History+3.png"})
+art_history_four = ArtHistoryInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Art+History+4.png"})
+art_history_five = ArtHistoryInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Art+History+5.png"})
+art_history_six = ArtHistoryInspiration.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/inspirations/Art+History+6.png"})

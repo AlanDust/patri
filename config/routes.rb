@@ -9,6 +9,10 @@ Rails.application.routes.draw do
         resources :projects, only: [:index, :create, :show]
         resources :animals, only: [:index, :create, :show]
         resources :portraits, only: [:index, :create, :show]
+        resources :music_inspirations, only: [:index, :create, :show]
+        resources :cat_inspirations, only: [:index, :create, :show]
+        resources :nature_inspirations, only: [:index, :create, :show]
+        resources :art_history_inspirations, only: [:index, :create, :show]
       end
     end
   end
@@ -18,5 +22,6 @@ Rails.application.routes.draw do
   get '/artists/:artist_id/portaits', to: 'homes#index'
   get '/artists/:artist_id/animals', to: 'homes#index'
   get '/artists/:artist_id/projects', to: 'homes#index'
+  get '/artists/:artist_id/music_inspirations', to: 'homes#index'
 
 end

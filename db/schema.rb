@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_18_213528) do
+ActiveRecord::Schema.define(version: 2018_12_18_235721) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 2018_12_18_213528) do
     t.index ["artist_id"], name: "index_animals_on_artist_id"
   end
 
+  create_table "art_history_inspirations", force: :cascade do |t|
+    t.string "picture", null: false
+    t.bigint "artist_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_art_history_inspirations_on_artist_id"
+  end
+
   create_table "artists", force: :cascade do |t|
     t.string "name", null: false
     t.string "picture"
@@ -33,12 +41,28 @@ ActiveRecord::Schema.define(version: 2018_12_18_213528) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "inspirations", force: :cascade do |t|
+  create_table "cat_inspirations", force: :cascade do |t|
     t.string "picture", null: false
     t.bigint "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["artist_id"], name: "index_inspirations_on_artist_id"
+    t.index ["artist_id"], name: "index_cat_inspirations_on_artist_id"
+  end
+
+  create_table "music_inspirations", force: :cascade do |t|
+    t.string "picture", null: false
+    t.bigint "artist_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_music_inspirations_on_artist_id"
+  end
+
+  create_table "nature_inspirations", force: :cascade do |t|
+    t.string "picture", null: false
+    t.bigint "artist_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_nature_inspirations_on_artist_id"
   end
 
   create_table "portraits", force: :cascade do |t|
