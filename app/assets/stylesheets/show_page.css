@@ -58,3 +58,20 @@
   font-size: 1rem;
   font-family: 'NotoSerif TC', serif;
 }
+
+.show-page-image {
+  margin: 5px;
+  height: 4rem;
+  width: 6rem;
+}
+
+.top-inspirations {
+  margin-top: 1rem;
+}
+
+.inspirations-header {
+  font-size: 3rem;
+  font-family: 'NotoSerif TC', serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
