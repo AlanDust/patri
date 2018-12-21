@@ -18,6 +18,10 @@ monet = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-
 nature = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/nature.jpg", title: "nature bottle title here", description: "Description of nature bottle here"})
 
 patri_and_lorena = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/patri_and_lorena.jpg", title: "Patri and Lorena drawing", description: "Description of Patri and Lorena drawing here"})
+portrait_two = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/1.png", title: "", description: "Description of drawing here"})
+portrait_three = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/2.png", title: "", description: "Description of drawing here"})
+portrait_four = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/3.png", title: "", description: "Description of drawing here"})
+portrait_five = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/4.png", title: "", description: "Description of drawing here"})
 
 cat = Animal.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/cat.jpg", title: "Cat drawing title here", description: "Description of Cat drawing here"})
 dog_and_cat = Animal.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/dog_and_cat.jpg", title: "Cat and Dog drawing title here", description: "Description of cat and dog drawing here"})
