@@ -5,7 +5,7 @@ const ArtHistoryInspirationTile = props => {
   return(
     <div>
       <div className="large-4 medium-4 small-4 column">
-        <img className="show-page-image" src={props.picture} />
+        <img className="inspiration-page-image" src={props.picture} />
       </div>
     </div>
   )

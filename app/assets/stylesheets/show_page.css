@@ -10,13 +10,17 @@
 }
 
 .showpage-text {
-  margin: 2rem;
+  margin: 4rem;
   font-family: 'Noto Serif TC', serif;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .description-text {
   font-size: 1rem;
   font-family: 'Noto Serif TC', serif;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .show-page-quote {
@@ -25,6 +29,10 @@
   margin-top: 1rem;
   text-align: center;
   font-family: 'Noto Serif TC', serif;
+}
+
+.show-page-quote p{
+  font-size: 2rem;
 }
 
 .artist-name {
@@ -59,7 +67,7 @@
   font-family: 'NotoSerif TC', serif;
 }
 
-.show-page-image {
+.inspiration-page-image {
   margin: 5px;
   height: 4rem;
   width: 6rem;
