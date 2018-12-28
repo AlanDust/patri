@@ -9,6 +9,7 @@
 
   <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700" rel="stylesheet">
 </head>
 <body>
 
@@ -20,6 +21,14 @@
     </ul>
 
     <section class="top-bar-section">
+      <ul class="right">
+        <li><%= link_to 'Projects', second_homepage_path %></li>
+        <li><%= link_to 'Animals', second_homepage_path %></li>
+        <li><%= link_to 'Portraits', second_homepage_path %></li>
+        <li><%= link_to 'Inspiration', second_homepage_path %></li>
+        <li><%= link_to 'About', second_homepage_path %></li>
+        <li><%= link_to 'Contact', second_homepage_path %></li>
+      </ul>
     </section>
   </nav>
 

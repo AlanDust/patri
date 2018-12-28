@@ -3,36 +3,40 @@
   margin-bottom: 2rem;
   font-size: 3rem;
   font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
 }
 
 .show-page-image {
-  margin: 2rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .showpage-text {
-  margin: 4rem;
+  margin: 1rem;
   font-family: 'Noto Serif TC', serif;
-  margin-top: 2rem;
   text-align: center;
 }
 
 .description-text {
   font-size: 1rem;
   font-family: 'Noto Serif TC', serif;
-  margin-top: 2rem;
   text-align: center;
 }
 
 .show-page-quote {
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
   margin-top: 1rem;
   text-align: center;
-  font-family: 'Noto Serif TC', serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 .show-page-quote p{
   font-size: 2rem;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .artist-name {
@@ -82,4 +86,31 @@
   font-family: 'NotoSerif TC', serif;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.homepage-image {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5rem;
+}
+
+.homepage-title {
+  font-family: 'NotoSerif TC', serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.painter-and-illustrator {
+  font-family: 'NotoSerif TC', serif;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
 }
