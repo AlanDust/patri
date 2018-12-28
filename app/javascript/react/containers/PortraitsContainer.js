@@ -48,7 +48,7 @@ class PortraitsContainer extends Component {
       <div>
         <div className="show-page-quote">
           <p> "Every portrait that is painted with feeling is a portrait of the artist, not of the sitter. The sitter is merely the accident, the occasion. It is not he who is revealed by the painter; it is rather the painter who, on the coloured canvas, reveals himself."</p>
-          <p> Oscar Wilde, The Picture of Dorian Gray</p>
+          <p> ~Oscar Wilde, The Picture of Dorian Gray</p>
         </div>
         <div className="large-12 medium-12 small-12 column">
           {portraitTiles}
