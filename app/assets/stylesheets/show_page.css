@@ -1,5 +1,20 @@
+.showpage-main-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
 .showpage-image-titles{
   align: justify;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+}
+
+.showpage-main-image-title {
+  text-align: center;
   margin-bottom: 2rem;
   font-size: 3rem;
   font-family: 'Noto Serif TC', serif;
@@ -14,6 +29,12 @@
 }
 
 .showpage-text {
+  margin: 1rem;
+  font-family: 'Noto Serif TC', serif;
+  text-align: center;
+}
+
+.showpage-main-image-description {
   margin: 1rem;
   font-family: 'Noto Serif TC', serif;
   text-align: center;

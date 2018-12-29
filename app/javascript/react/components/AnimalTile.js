@@ -4,7 +4,7 @@ const AnimalTile = props => {
 
   return(
     <div>
-      <div className="large-6 medium-6 small-6 column">
+      <div className="large-4 medium-4 small-4 column">
         <h1 className="showpage-text showpage-image-titles">{props.title}</h1>
 
         <div className="large-12 medium-12 small-12 column">

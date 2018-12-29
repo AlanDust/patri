@@ -51,7 +51,14 @@ class PortraitsContainer extends Component {
           <p> ~Oscar Wilde, The Picture of Dorian Gray</p>
         </div>
         <div className="large-12 medium-12 small-12 column">
-          {portraitTiles}
+          <div className="large-6 medium-6 small-6 column">
+            <p className="showpage-main-image-title">Lorena and Patricia</p>
+            <img className="showpage-main-image" src="https://s3.amazonaws.com/patri-website/patri_and_lorena.jpg" />
+            <p className="showpage-main-image-description">Watercolor Pencils</p>
+          </div>
+          <div className="large-6 medium-6 small-6 column">
+            {portraitTiles}
+          </div>
         </div>
       </div>
     )
