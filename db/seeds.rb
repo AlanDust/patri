@@ -14,7 +14,6 @@ The delicate dance between them, Nature and Humanity has fascinated artist since
 From the beginning of human history, nature has played a vital role in our creative expressions. The shapes in the lands, the curves in animal´s movements, the colors of the rainbow, the bright of the water we rely on for daily survival condition how we view, interpret and feel the world around us. And in turn, the Art we create from nature´s inspiration becomes part of our personal and cultural and vital identity."}
 ])
 
-monet = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/monet.jpg", title: "Copy of 'Monet's garden at Vétheuil (1880)'", description: "Acrylics on canvas paper"})
 nature = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/nature.jpg", title: "Mother Nature", description: "Acrylics on glass bottle"})
 
 portrait_two = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/1.png", title: "Galadriel", description: "Watercolor pencils and oil on canvas paper"})
@@ -22,10 +21,7 @@ portrait_three = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.
 portrait_four = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/3.png", title: "Boy's Portrait (unfinished)", description: "Watercolor pencils"})
 portrait_five = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/4.png", title: "Salome", description: "Charcoal"})
 portrait_six = Portrait.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/mermaid.jpg", title: "Mermaid", description: "Acrylics on glass bottle"})
-portrait_one = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/patri_and_lorena.jpg", title: "Patricia and Lorena", description: "Watercolor pencils"})
 
-
-cat = Animal.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/cat.jpg", title: "Nemo", description: "Watercolor pencils and oil"})
 sammy = Animal.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/sammy.jpg", title: "Sammy", description: "Pastel and watercolor pencils"})
 dog_and_cat = Animal.create ({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/dog_and_cat.jpg", title: "Puppy and Kitten", description: "Watercolor pencils"})
 birds = Animal.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/birds.jpg", title: "Birds", description: "Acrylics on glass bottle"})

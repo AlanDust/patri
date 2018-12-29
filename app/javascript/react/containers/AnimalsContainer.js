@@ -50,7 +50,14 @@ class AnimalsContainer extends Component {
           <p> ~Leonardo Da Vinci</p>
         </div>
         <div className="large-12 medium-12 small-12 column">
-          {animalTiles}
+          <div className="large-6 medium-6 small-6 column">
+            <p className="showpage-main-image-title"> Nemo </p>
+            <img className="showpage-main-image" src="https://s3.amazonaws.com/patri-website/cat.jpg" />
+            <p className="showpage-main-image-description">Watercolor Pencils and Oil</p>
+          </div>
+          <div className="large-6 medium-6 small-6 column">
+            {animalTiles}
+          </div>
         </div>
       </div>
     )
