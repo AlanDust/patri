@@ -8,12 +8,18 @@ const Homepage = props => {
       return (
         <div>
           <ul>
-            <Link to={'/'}>Home </Link>
-            <Link to={'/artists/1/animals'}>Animals </Link>
-            <Link to={'/artists/1/projects'}>Projects </Link>
-            <Link to={'/artists/1/portraits'}>Portraits </Link>
-            <Link to={'/artists/1/music_inspirations'}>Inspirations </Link>
-            <Link to={'/artists/1'}>About </Link>
+            <div className="large-4 medium-4 small-4 column left-name">
+              <p className="navbar-name">Patricia De Andrés </p>
+              <span className="navbar-description">Painter & Illustrator</span>
+            </div>
+            <div className="large-7 medium-7 small-7 column right-links">
+              <Link to={'/'} className="navbar-link">Home </Link>
+              <Link to={'/artists/1/animals'} className="navbar-link">Animals</Link>
+              <Link to={'/artists/1/projects'} className="navbar-link">Projects</Link>
+              <Link to={'/artists/1/portraits'} className="navbar-link">Portraits</Link>
+              <Link to={'/artists/1/music_inspirations'} className="navbar-link">Inspirations</Link>
+              <Link to={'/artists/1'} className="navbar-link" className="right-most-link">About</Link>
+            </div>
           </ul>
         </div>
       )
@@ -22,10 +28,10 @@ const Homepage = props => {
 
   return(
     <div>
-      <NavBar />
+      <div className="large-12 medium-12 small-12 column nav-bar">
+        <NavBar />
+      </div>
       <Link to={`/second_homepage`}>
-        <h1 className = "homepage-title">Patricia De Andres</h1>
-        <p className="painter-and-illustrator">Painter & Illustrator</p>
         <img className="homepage-image" src="https://s3.amazonaws.com/patri-website/homepage_image.png" />
       </Link>
     </div>

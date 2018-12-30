@@ -1,0 +1,34 @@
+.navbar-link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.right-links {
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.left-name {
+  font-style: italic;
+  margin-left: 5rem;
+}
+
+.navbar-name {
+  font-family: 'Caudex', serif;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.navbar-description {
+  font-family: 'Caudex', serif;
+  font-size: 15px;
+}
+
+.right-most-link {
+  margin-right: 5rem;
+}
+
+.nav-bar {
+  margin-bottom: 3rem;
+}
