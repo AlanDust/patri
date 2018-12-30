@@ -45,6 +45,7 @@ class AnimalsContainer extends Component {
 
     return(
       <div>
+        <NavBar />
         <div className="show-page-quote">
           <p> "A poet knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away. Details make perfection, and perfection is not a detail."</p>
           <p> ~Leonardo Da Vinci</p>
