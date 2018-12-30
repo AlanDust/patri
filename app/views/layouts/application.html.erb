@@ -10,27 +10,9 @@
   <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caudex" rel="stylesheet">
 </head>
 <body>
-
-  <nav class="top-bar">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="/">Patricia De Andres Flores - Painter & Illustrator</a></h1>
-      </li>
-    </ul>
-
-    <section class="top-bar-section">
-      <ul class="right">
-        <li><%= link_to 'Projects', second_homepage_path %></li>
-        <li><%= link_to 'Animals', second_homepage_path %></li>
-        <li><%= link_to 'Portraits', second_homepage_path %></li>
-        <li><%= link_to 'Inspiration', second_homepage_path %></li>
-        <li><%= link_to 'About', second_homepage_path %></li>
-        <li><%= link_to 'Contact', second_homepage_path %></li>
-      </ul>
-    </section>
-  </nav>
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
