@@ -9,6 +9,8 @@ class ArtistsContainer extends Component {
       error: "",
     }
   }
+
+
   componentDidMount() {
     fetch(`/api/v1/artists`)
     .then(response => {

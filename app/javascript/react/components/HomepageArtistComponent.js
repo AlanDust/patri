@@ -3,8 +3,26 @@ import { Link } from 'react-router';
 
 const HomepageArtistComponent = props => {
 
+  let NavBar = React.createClass({
+    render() {
+      return (
+        <div>
+          <ul>
+            <Link to={'/'}>Home </Link>
+            <Link to={'/artists/1/animals'}>Animals </Link>
+            <Link to={'/artists/1/projects'}>Projects </Link>
+            <Link to={'/artists/1/portraits'}>Portraits </Link>
+            <Link to={'/artists/1/music_inspirations'}>Inspirations </Link>
+            <Link to={'/artists/1'}>About </Link>
+          </ul>
+        </div>
+      )
+    }
+  });
+
   return(
     <div>
+      <NavBar />
       <div className="large-4 medium-4 small-12 column">
         <h1 className="homepage-headers">Projects</h1>
         <Link to={`/artists/${props.id}/projects`}>
