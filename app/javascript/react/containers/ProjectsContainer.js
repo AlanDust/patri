@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectTile from '../components/ProjectTile'
+import { Link } from 'react-router';
 
 class ProjectsContainer extends Component {
   constructor(props) {
@@ -46,6 +47,22 @@ class ProjectsContainer extends Component {
 
     return(
       <div>
+        <div className="large-12 medium-12 small-12 column">
+          <ul>
+            <div className="large-4 medium-4 small-4 column left-name">
+              <p className="navbar-name">Patricia De Andrés </p>
+              <span className="navbar-description">Painter & Illustrator</span>
+            </div>
+            <div className="large-7 medium-7 small-7 column right-links">
+              <Link to={'/'} className="navbar-link">Home </Link>
+              <Link to={'/artists/1'} className="navbar-link">About</Link>
+              <Link to={'/artists/1/animals'} className="navbar-link">Animals</Link>
+              <Link to={'/artists/1/projects'} className="navbar-link">Projects</Link>
+              <Link to={'/artists/1/portraits'} className="navbar-link">Portraits</Link>
+              <Link to={'/artists/1/music_inspirations'} className="navbar-link" className="right-most-link">Inspirations</Link>
+            </div>
+          </ul>
+        </div>
         <div className="show-page-quote">
           <p> "I spend much more time looking at Art History and at different references to Art than I do at actual objects."</p>
           <p> ~Jeff Koons</p>
