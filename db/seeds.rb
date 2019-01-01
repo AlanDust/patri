@@ -14,7 +14,19 @@ The delicate dance between them, Nature and Humanity has fascinated artist since
 From the beginning of human history, nature has played a vital role in our creative expressions. The shapes in the lands, the curves in animal´s movements, the colors of the rainbow, the bright of the water we rely on for daily survival condition how we view, interpret and feel the world around us. And in turn, the Art we create from nature´s inspiration becomes part of our personal and cultural and vital identity."}
 ])
 
+project_two = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Klimt+1.jpg", title: "Impressions of Klimt", description: "Charcoal"})
+project_five = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/klimt+4.jpg", title: "Impressions of Klimt", description: "Charcoal"})
+project_four = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/4.png", title: "Salome(Impressions of Klimt)", description: "Charcoal"})
+project_three = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Klimt+2.jpg", title: "Impressions of Klimt", description: "Charcoal"})
+project_six = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Guggenheim+1.png", title: "Guggenheim Souveniers 1", description: "Watercolor"})
+project_seven = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Guggenheim+2.png", title: "Guggenheim Souveniers 2", description: "Watercolor"})
+project_eight = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Guggenheim+3.png", title: "Guggenheim Souveniers 3", description: "Watercolor"})
+project_nine = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Guggenheim+4.png", title: "Guggenheim Souveniers 4", description: "Watercolor"})
+project_ten = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Guggenheim+5.png", title: "Guggenheim Souveniers 5", description: "Watercolor"})
+project_eleven = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Guggenheim+6.png", title: "Guggenheim Souveniers 6", description: "Watercolor"})
+project_twelve = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/projects/Guggenheim+7.png", title: "Guggenheim Souveniers 7", description: "Watercolor"})
 nature = Project.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/nature.jpg", title: "Mother Nature", description: "Acrylics on glass bottle"})
+
 
 portrait_two = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/1.png", title: "Galadriel", description: "Watercolor pencils and oil on canvas paper"})
 portrait_three = Portrait.create({ artist_id: 1, picture: "https://s3.amazonaws.com/patri-website/portraits/2.png", title: "Russel Crowe Portrait", description: "Graphite pencils"})
