@@ -7,7 +7,6 @@ import ProjectsContainer from './ProjectsContainer';
 import AnimalsContainer from './AnimalsContainer';
 import PortraitsContainer from './PortraitsContainer';
 import InspirationsContainer from './InspirationsContainer';
-import HomepageArtistComponent from '../components/HomepageArtistComponent';
 import Homepage from './Homepage';
 
 
@@ -15,7 +14,6 @@ const App = (props) => {
   return (
     <Router history={browserHistory}>
       <Route path='/' component={Homepage} />
-      <Route path='/second_homepage' component={HomepageArtistComponent} />
       <Route path='/artists/:id'>
         <IndexRoute component={ArtistsContainer} />
         <Route path='/artists/:artist_id/projects' component={ProjectsContainer} />

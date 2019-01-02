@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HomepageArtistComponent from '../components/HomepageArtistComponent'
 
 class ArtworksContainer extends Component {
   constructor(props) {
