@@ -72,7 +72,7 @@ class AnimalsContainer extends Component {
             <img className="showpage-main-image" src="https://s3.amazonaws.com/patri-website/cat.jpg" />
             <p className="showpage-main-image-description">Watercolor Pencils and Oil</p>
           </div>
-          <div className="large-6 medium-6 small-6 column">
+          <div className="large-6 medium-6 small-6 column all-animal-tiles">
             {animalTiles}
           </div>
         </div>
