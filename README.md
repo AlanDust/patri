@@ -1,5 +1,7 @@
 # README
 
+https://patricia-deandres.herokuapp.com/
+
 Patri is a simple web application that I am developing as a present for my girlfriend, Patri.  
 
 The application is set up so that an artist can sign up and possibly eventually add their own artwork.  However, I decided that I would stick with the artwork of Patri.  This was mainly an exercise in reinforcing my React, MVC, PostgreSQL, CSS, and Ruby on Rails knowledge, while making a nice product for someone I care about.  
