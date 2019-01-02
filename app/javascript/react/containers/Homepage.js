@@ -31,9 +31,7 @@ const Homepage = props => {
       <div className="large-12 medium-12 small-12 column nav-bar">
         <NavBar />
       </div>
-      <Link to={`/second_homepage`}>
-        <img className="homepage-image" src="https://s3.amazonaws.com/patri-website/homepage_image.png" />
-      </Link>
+      <img className="homepage-image" src="https://s3.amazonaws.com/patri-website/homepage_image.png" />
     </div>
   )
 }

@@ -17,7 +17,6 @@ Rails.application.routes.draw do
     end
   end
 
-  get '/second_homepage', to: 'homes#index'
   get '/artists/:id', to: 'homes#index'
   get '/artists/:artist_id/portraits', to: 'homes#index'
   get '/artists/:artist_id/animals', to: 'homes#index'

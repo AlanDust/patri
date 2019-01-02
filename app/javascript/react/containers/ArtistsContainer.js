@@ -11,7 +11,6 @@ class ArtistsContainer extends Component {
     }
   }
 
-
   componentDidMount() {
     fetch(`/api/v1/artists`)
     .then(response => {
@@ -46,7 +45,7 @@ class ArtistsContainer extends Component {
 
     return(
       <div>
-        <div className="large-12 medium-12 small-12 column">
+        <div className="large-12 medium-12 small-12 column nav-bar">
           <ul>
             <div className="large-4 medium-4 small-4 column left-name">
               <p className="navbar-name">Patricia De Andrés </p>
