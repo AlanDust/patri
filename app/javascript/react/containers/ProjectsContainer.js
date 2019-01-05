@@ -70,12 +70,12 @@ class ProjectsContainer extends Component {
           <p> ~Jeff Koons</p>
         </div>
         <div className="large-12 medium-12 small-12 column">
-          <div className="large-6 medium-6 small-6 column">
+          <div className="large-6 medium-12 small-12 column">
             <p className="showpage-main-image-title">Copy of Monet's 'Garden at Vétheuil'</p>
             <img className="showpage-main-image" src="https://s3.amazonaws.com/patri-website/monet.jpg" />
             <p className="showpage-main-image-description">Acrylics</p>
           </div>
-          <div className="large-6 medium-6 small-6 column">
+          <div className="large-6 medium-12 small-12 column">
             {projectTiles}
           </div>
         </div>

@@ -8,7 +8,7 @@
 .showpage-image-titles{
   align: justify;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-family: 'Oleo Script Swash Caps', cursive;
   font-weight: bolder;
 }
@@ -32,7 +32,7 @@
 }
 
 .description-text {
-  font-size: .7rem;
+  font-size: 1vw;
   font-family: 'Oleo Script Swash Caps', cursive;
   text-align: center;
   font-weight: lighter;
@@ -79,8 +79,8 @@
   margin-top: 3rem;
 }
 
-.inspiration-quotes {
-  font-size: 1rem;
+.inspiration-quotes p{
+  font-size: 1.2vw;
   font-family: 'NotoSerif TC', serif;
 }
 
