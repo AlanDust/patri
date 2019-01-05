@@ -147,7 +147,7 @@ class InspirationsContainer extends Component {
                 <p> ~Sur Das</p>
               </div>
             </div>
-            <div className="large-6 medium-6 small-6 column">
+            <div className="large-6 medium-12 small-12 column">
               <div>
                 {musicInspirationTiles}
               </div>
@@ -161,7 +161,7 @@ class InspirationsContainer extends Component {
                 <p> ~Jules Verne</p>
               </div>
             </div>
-            <div className="large-6 medium-6 small-6 column">
+            <div className="large-6 medium-12 small-12 column">
               <div>
                 {catInspirationTiles}
               </div>
@@ -170,7 +170,7 @@ class InspirationsContainer extends Component {
 
           <div className="large-12 medium-12 small-12 column">
             <div className="large-6 medium-6 small-6 column">
-              <div className="large-6 medium-6 small-6 column">
+              <div className="large-6 medium-12 small-12 column">
                 <div>
                   {natureInspirationTiles}
                 </div>
@@ -184,7 +184,7 @@ class InspirationsContainer extends Component {
             </div>
 
             <div className="large-6 medium-6 small-6 column">
-              <div className="large-6 medium-6 small-6 column">
+              <div className="large-6 medium-12 small-12 column">
                 <div>
                   {artHistoryInspirationTiles}
                 </div>
