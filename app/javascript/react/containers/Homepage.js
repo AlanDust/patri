@@ -30,10 +30,12 @@ const Homepage = props => {
 
   return(
     <div>
-      <div className="large-12 medium-12 small-12 column nav-bar">
+      <div className="large-12 medium-12 small-12 column">
         <NavBar />
       </div>
-      <img className="homepage-image" src="https://s3.amazonaws.com/patri-website/homepage_image.png" />
+      <div className="large-12 medium-12 small-12 column">
+        <img className="homepage-image" src="https://s3.amazonaws.com/patri-website/homepage_image.png" />
+      </div>
     </div>
   )
 }

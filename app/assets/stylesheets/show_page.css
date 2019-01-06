@@ -79,28 +79,6 @@
   margin-top: 3rem;
 }
 
-.inspiration-quotes p{
-  font-size: 1.2vw;
-  font-family: 'NotoSerif TC', serif;
-}
-
-.inspiration-page-image {
-  margin: 5px;
-  height: 4rem;
-  width: 6rem;
-}
-
-.top-inspirations {
-  margin-top: 1rem;
-}
-
-.inspirations-header {
-  font-size: 3rem;
-  font-family: 'NotoSerif TC', serif;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 .homepage-image {
   margin-left: auto;
   margin-right: auto;
